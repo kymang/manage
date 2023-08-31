@@ -1,0 +1,92 @@
+{
+      "name": "Amang Robot",
+      "description": "Telegram Group Management Bot.",
+      "logo": "https://telegra.ph//file/1d5a4b3398dc3cd1e3c0c.jpg",
+      "keywords": [
+         "telegram",
+         "pyrogram",
+         "modular",
+         "group",
+         "manager",
+         "Fallen"
+      ],   
+   "repository": "https://github.com/Amang1503/AmangRobot",
+   "stack": "heroku-22",
+   "env": {
+      "API_ID": {
+         "description": "Get this value from my.telegram.org/apps.",
+         "required": true,
+         "value": "1634450"
+      },
+      "API_HASH": {
+         "description": "Get this value from my.telegram.org/apps.",
+         "required": true,
+         "value": "1a42e816cae8d86e71a4c466bba19b8c"
+      },
+      "ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+         "required": true,
+         "value": "ANYTHING"
+      },
+      "LOG_GROUP_ID": {
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "required": true,
+         "value": "-1001812143750"
+      },
+      "MESSAGE_DUMP_CHAT": {
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "required": true,
+         "value": "-1001812143750"
+      },
+      "GBAN_LOG_GROUP_ID": {
+         "description": "Log gban ex: '-123456'",
+         "required": true,
+         "value": "-1001812143750"
+      },
+      "ARQ_API_KEY": {
+         "description": "Bebas",
+         "required": true,
+         "value": ""
+      },
+      "ARQ_API_URL": {
+         "description": "Bebas ",
+         "required": true,
+         "value": "https://arq.hamker.in"
+      },
+      "PM_PERMIT": {
+         "description": "Untuk PM Permit Userbot",
+         "required": true,
+         "value": "True"
+      },
+      "MONGO_URL": {
+         "description": "Required for database connections.",
+         "required": true,
+         "value": ""
+      },
+      "USERBOT_PREFIX": {
+         "description": "Prefix userbot.",
+         "required": true,
+         "value": "!"
+      },
+      "OPENAI_API": {
+         "description": "Openai api key.",
+         "required": false,
+         "value": ""
+      },
+      "SESSION": {
+         "description": "String session pyrogram.",
+         "required": true,
+         "value": ""
+      },
+      "SUDO_USERS_ID": {
+         "description": "Id Sudo User.",
+         "required": false,
+         "value": ""
+      },
+      "BOT_TOKEN": {
+         "description": "Get bot token from @BotFather on TG",
+         "required": true,
+         "value": ""
+      }
+   }
+}
