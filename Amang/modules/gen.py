@@ -10,6 +10,7 @@ from telethon.errors import rpcerrorlist
 from pyrogram.errors import UserBannedInChannel
 import telethon
 import pyrogram
+import pyrogram1
 from pyrogram.errors import (
     ApiIdInvalid,
     PhoneNumberInvalid,
