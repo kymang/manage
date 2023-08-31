@@ -14,15 +14,13 @@ from Amang.utils.constants import MARKDOWN
 from config import *
 from Amang import *
 
-
-
 home_keyboard_pm = InlineKeyboardMarkup(
     [
         [ 
             InlineKeyboardButton(text="Buat String Session 📝", callback_data="generate"),
         ],
         [
-            InlineKeyboardButton(text="Perintah Lainnya ❓", callback_data="bot_commands"),
+            InlineKeyboardButton(text="Perintah Lainnya ❓", callback_data="helpernya"),
             InlineKeyboardButton(text="Perintah Multi Fungsi 🤖", callback_data="multi_funsgi"),
         ],
         [
