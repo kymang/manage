@@ -5,7 +5,7 @@ from .gen import generate_session, ask_ques, buttons_ques
 from Amang import *
 
 
-@app.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram1|jasa_repo|multi_funsgi|telethon)$"))
+@app.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram1|jasa_repo|multi_funsgi|helpernya|telethon)$"))
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
     query = callback_query.data.lower()
     user = await bot.get_me()
@@ -69,6 +69,29 @@ Jika menemukan Kendala atau Masalah, silahkan hubungi @amwangsupport atau @amwan
                   InlineKeyboardButton(
                     text="Ubot Premium",
                     callback_data="bahan"),
+                ],
+                [
+                  InlineKeyboardButton(
+                    text="Kembali",
+                    callback_data="ahh_ajg"),
+                ],
+              ]
+            ),
+        )
+    elif query == "helpernya":
+        await callback_query.message.reply(
+            text="""
+Berikut Adalah Daftar Perintah Untuk Manage & Music
+""",
+          reply_markup=InlineKeyboardMarkup(
+              [
+                [
+                  InlineKeyboardButton(
+                    text="Manage",
+                    callback_data="bot_commands"),
+                  InlineKeyboardButton(
+                    text="Music",
+                    callback_data="settingback_helper"),
                 ],
                 [
                   InlineKeyboardButton(
