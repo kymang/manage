@@ -5,7 +5,7 @@ from .gen import generate_session, ask_ques, buttons_ques
 from Amang import *
 
 
-@app.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram1|jasa_repo|multi_funsgi|telethon)$"))
+@app.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram1|telethon|jasa_repo|multi_funsgi)$"))
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
     query = callback_query.data.lower()
     user = await bot.get_me()
