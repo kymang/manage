@@ -67,7 +67,7 @@ Jika menemukan Kendala atau Masalah, silahkan hubungi @amwangsupport atau @amwan
                     text="Fsub Premium",
                     callback_data="help_bot"),
                   InlineKeyboardButton(
-                    text"Ubot Premium",
+                    text="Ubot Premium",
                     callback_data="bahan"),
                 ],
                 [
