@@ -30,7 +30,7 @@ openai
 psutil
 httpx[http2]
 cachetools
-pyrate-limiter
+pyrate-limiter==2.10.0
 SpeechRecognition
 py-extract
 py-trans
