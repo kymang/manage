@@ -1,6 +1,6 @@
 from typing import Union
 
-from pyrate_limiter import BucketFullException, Duration, Limiter, RequestRate
+from pyrate_limiter import BucketFullException, Duration, Limiter, RequestRate, MemoryListBucket
 
 
 class RateLimiter:
@@ -27,6 +27,7 @@ class RateLimiter:
             self.minute_rate,
             self.hourly_rate,
             self.daily_rate,
+            bucket_class=MemoryListBucket,
         )
 
     async def acquire(self, userid: Union[int, str]) -> bool:
