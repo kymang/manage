@@ -43,7 +43,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 [
                   InlineKeyboardButton(
                     text="Amang",
-                    user_id=OWNER_ID),
+                    callback_data="help_bot"),
                 ],
                 [
                   InlineKeyboardButton(
