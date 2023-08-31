@@ -5,7 +5,7 @@ from .gen import generate_session, ask_ques, buttons_ques
 from Amang import *
 
 
-@app.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram1|telethon|jasa_repo)$"))
+@app.on_callback_query(filters.regex(pattern=r"^(generate|pyrogram|pyrogram1|jasa_repo|multi_funsgi|telethon)$"))
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
     query = callback_query.data.lower()
     user = await bot.get_me()
@@ -37,6 +37,30 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
 2. ᴄᴀᴛᴀᴛᴀɴ ʜᴇʀᴏᴋᴜ ʀᴀᴡᴀɴ sᴜsᴘᴇɴ ᴊᴀᴅɪ sᴀʏᴀ ᴅᴇᴘʟᴏʏ ᴅɪ ᴠᴘs.
 3. sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ AMANG ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ / ᴍᴇɴᴀɴʏᴀᴋᴀɴ ᴄᴏɴᴛᴏʜ ʙᴏᴛ.
 𝗦𝗘𝗞𝗜𝗔𝗡 𝗧𝗘𝗥𝗜𝗠𝗔 𝗞𝗔𝗦𝗜𝗛 🙏.
+""",
+          reply_markup=InlineKeyboardMarkup(
+              [
+                [
+                  InlineKeyboardButton(
+                    text="Amang",
+                    user_id=OWNER_ID),
+                ],
+                [
+                  InlineKeyboardButton(
+                    text="Kembali",
+                    callback_data="ahh_ajg"),
+                ],
+              ]
+            ),
+        )
+    elif query == "multi_funsgi":
+        await callback_query.message.reply(
+            text="""
+Daftar Perintah Multi Fungsi Bot Amang 🤖
+/fsub - Untuk Memulai perintah Fsub Premium.
+/ubot - Untuk Memulai perintah Ubot Premium.
+
+Jika menemukan Kendala atau Masalah, silahkan hubungi @amwangsupport atau @amwang
 """,
           reply_markup=InlineKeyboardMarkup(
               [
