@@ -43,7 +43,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 [
                   InlineKeyboardButton(
                     text="Amang",
-                    callback_data="help_bot"),
+                    user_id=OWNER_ID),
                 ],
                 [
                   InlineKeyboardButton(
@@ -57,8 +57,6 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         await callback_query.message.reply(
             text="""
 Daftar Perintah Multi Fungsi Bot Amang 🤖
-/fsub - Untuk Memulai perintah Fsub Premium.
-/ubot - Untuk Memulai perintah Ubot Premium.
 
 Jika menemukan Kendala atau Masalah, silahkan hubungi @amwangsupport atau @amwang
 """,
@@ -66,8 +64,10 @@ Jika menemukan Kendala atau Masalah, silahkan hubungi @amwangsupport atau @amwan
               [
                 [
                   InlineKeyboardButton(
-                    text="Amang",
-                    user_id=OWNER_ID),
+                    text="Fsub Premium",
+                    callback_data="help_bot"),
+                  InlineKeyboardButton(text"Ubot Premium",
+                    callback_data="bahan")
                 ],
                 [
                   InlineKeyboardButton(
