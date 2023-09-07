@@ -65,10 +65,10 @@ Jika menemukan Kendala atau Masalah, silahkan hubungi @amwangsupport atau @amwan
                 [
                   InlineKeyboardButton(
                     text="Fsub Premium",
-                    callback_data="back_start"),
+                    url=f"https://t.me/FsubPremium_bot"),
                   InlineKeyboardButton(
                     text="Ubot Premium",
-                    callback_data="start0"),
+                    url=f"https://t.me/amwang_bot"),
                 ],
                 [
                   InlineKeyboardButton(
