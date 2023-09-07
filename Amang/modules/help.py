@@ -21,7 +21,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(text="Perintah Lainnya ❓", callback_data="helpernya"),
-            InlineKeyboardButton(text="Perintah Multi Fungsi 🤖", callback_data="multi_funsgi"),
+            InlineKeyboardButton(text="Perintah Bot Lainnya 🤖", callback_data="multi_funsgi"),
         ],
         [
             InlineKeyboardButton(
@@ -49,7 +49,7 @@ keyboard = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(text="Perintah Lainnya ❓", callback_data="bot_commands"),
-            InlineKeyboardButton(text="Perintah Multi Fungsi 🤖", callback_data="multi_funsgi"),
+            InlineKeyboardButton(text="Perintah Bot Lainnya 🤖", callback_data="multi_funsgi"),
         ],
         [
             InlineKeyboardButton(
