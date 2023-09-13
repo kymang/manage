@@ -40,7 +40,7 @@ pymediainfo
 wget
 regex
 py-tgcalls==0.9.7
-Telethon
+git+https://github.com/LonamiWebs/Telethon
 tgcrypto
 yt-dlp
 youtube-search-python
