@@ -1,6 +1,7 @@
 asyncio
 aiofiles
 aiohttp
+pikepdf
 numpy
 ffmpeg
 gTTS
