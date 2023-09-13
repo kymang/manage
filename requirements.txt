@@ -2,7 +2,7 @@ asyncio
 aiofiles
 aiohttp
 numpy
-ffmpeg-python
+ffmpeg
 gTTS
 dnspython==2.3.0
 future
@@ -21,7 +21,7 @@ youtube_dl
 bs4
 python-dotenv
 feedparser
-#pyromod==1.5
+pyromod==1.5
 fuzzysearch
 img2pdf
 telegraph
